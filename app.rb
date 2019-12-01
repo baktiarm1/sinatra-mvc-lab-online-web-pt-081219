@@ -11,6 +11,6 @@ class App < Sinatra::Base
     erb :latinized
   end
 
-  
+
 
 end
