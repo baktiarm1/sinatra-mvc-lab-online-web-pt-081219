@@ -4,11 +4,12 @@ class PigLatinizer
   attr_reader :text
 
   def initialize(text)
-    @text = text.downcase
+    @text = text
   end
 
- def print
-   text
+ def is_vowel?(word)
+   vowels = 'aeiouAEIOU'
+   vowels.include?(word[0])
  end 
 
  def translate
