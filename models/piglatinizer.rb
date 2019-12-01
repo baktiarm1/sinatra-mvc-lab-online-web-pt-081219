@@ -1,7 +1,7 @@
 class PigLatinizer
 
 
-  attr_reader :text
+  attr_accessor :text
 
   def initialize(text)
     @text = text
@@ -22,7 +22,7 @@ class PigLatinizer
 
   def to_pig_lating(text)
     text.split.collect {|word| piglatinize(word)}.join(' ')
-  end 
+  end
 
 
 end
